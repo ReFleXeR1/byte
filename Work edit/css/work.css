@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Mulish:wght@600&display=swap");
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
+}
+
+.nav {
+  font-family: "Mulish";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.nav .items {
+  width: 150px;
+  float: right;
+}
+
+.nav .sale {
+  color: red;
+}
+
+.img {
+  width: 4%;
+  height: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 1000px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.container .viking {
+  position: absolute;
+  width: 500px;
+  height: 520px;
+  left: 375px;
+  top: 100px;
+  background: url(../img/viking.png);
+  z-index: 0;
+}
+
+.container .left {
+  position: absolute;
+  width: 600px;
+  height: 520px;
+  left: 900px;
+  top: 100px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(20, 25, 37, 0)), color-stop(30.57%, #131824));
+  background: linear-gradient(90deg, rgba(20, 25, 37, 0) 0%, #131824 30.57%);
+  z-index: 1;
+}
+
+.container .right {
+  position: absolute;
+  width: 650px;
+  height: 520px;
+  left: 0px;
+  top: 100px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(20, 25, 37, 0)), color-stop(30.57%, #131824));
+  background: linear-gradient(90deg, rgba(20, 25, 37, 0) 0%, #131824 30.57%);
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+  z-index: 1;
+}
+
+.container .text {
+  font-family: "Goudy Bookletter 1911";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  z-index: 2;
+  color: #ffffff;
+  position: absolute;
+  width: 563px;
+  height: 88px;
+  left: 480px;
+  top: 312px;
+}
+
+.container .price {
+  position: absolute;
+  width: 121px;
+  height: 21px;
+  left: 690px;
+  top: 450px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .price2 {
+  color: dimgray;
+}
+
+.button {
+  position: absolute;
+  font-family: Mulish;
+  width: 163px;
+  height: 48px;
+  left: 44%;
+  right: 0%;
+  top: 74%;
+  bottom: 0%;
+  background: #CC0000;
+  border: 1px solid #950000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: inset 0px -2px 2px rgba(32, 32, 32, 0.33);
+          box-shadow: inset 0px -2px 2px rgba(32, 32, 32, 0.33);
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+}

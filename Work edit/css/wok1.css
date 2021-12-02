@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Mulish:wght@600&display=swap");
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
+}
+
+.nav {
+  font-family: "Mulish";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.nav .items {
+  width: 150px;
+  float: right;
+}
+
+.nav .sale {
+  color: red;
+}
+
+.img {
+  width: 4%;
+  height: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 1000px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 1150px;
+}
+
+.container .img {
+  background: url(../img/01.png);
+  position: absolute;
+  width: 659px;
+  height: 524px;
+  left: 100px;
+  right: 0px;
+  top: 100px;
+  bottom: 0px;
+}
+
+.container .h {
+  position: absolute;
+  width: 465px;
+  height: 131px;
+  left: 820px;
+  top: 100px;
+  font-family: Goudy Bookletter 1911;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #202020;
+}
+
+.container .h1 {
+  position: absolute;
+  width: 194px;
+  height: 27px;
+  left: 820px;
+  top: 290px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+}
+
+.container .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 16px 12px;
+  position: absolute;
+  width: 293px;
+  height: 48px;
+  left: 820px;
+  top: 350px;
+  background: #FFFFFF;
+  border: 1px solid #D8D8D8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.13);
+          box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.13);
+  border-radius: 4px;
+}
+
+.container .button1 {
+  position: static;
+  height: 16px;
+  left: 1px;
+  right: 1px;
+  top: calc(50% - 16px/2);
+  /* 12px-caption/REGULAR */
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.33);
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 0px 128px;
+}
+
+.container .price {
+  position: absolute;
+  height: 46px;
+  left: 820px;
+  right: 459px;
+  bottom: 364px;
+  top: 420px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* accent/red */
+  color: #CC0000;
+}
+
+@media (max-width: 1150px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+}
